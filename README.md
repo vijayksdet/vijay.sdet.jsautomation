@@ -26,16 +26,28 @@ npm (Node Package Manager)
    		git clone https://github.com/vijayksdet/vijay.sdet.jsautomation.git
 2. Change into the project directory & run : npm install
 
+**Execution** : 
+Comand to run tests : _"npm run qa"_
+
+
 **Configuration**
 1.cucumber.js -- contains all cucumber options 
+
 2.hooks.js -- contains hooks releated to cucumber
 
 **Reporting**
 The framework generates detailed HTML reports using the Cucumber-HTML plugin. After running the tests, the reports can be found in the reports directory. 
+
+comand to generate Reports : _"npm run reports" _
 
 **Contributing**
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
 
 **License**
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
+
+Execution : 
+Execute the tests with
+`npm run qa` for ship environment
+
 
