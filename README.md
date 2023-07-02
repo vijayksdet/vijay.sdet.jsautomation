@@ -1,4 +1,4 @@
-# vijay.sdet.jsautomation-- End-to-End Automation with Cucumber, Playwright and  Axios.
+#End-to-End Automation with Cucumber, Playwright and  Axios.
 
 **Introduction**
 This project provides an end-to-end automation framework using Cucumber, Playwright, Axios, Chai, and Cucumber-HTML Reports. 
