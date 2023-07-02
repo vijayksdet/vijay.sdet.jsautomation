@@ -1,4 +1,7 @@
 {
+  "author": "Vijay_Sdet",
+  "description": "UI & API Automation with cucumber, playwright and axios",
+  "license": "The MIT License",
   "dependencies": {
     "@cucumber/cucumber": "^9.2.0",
     "axios": "^1.4.0",
