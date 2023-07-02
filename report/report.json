@@ -1,0 +1,798 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-tests----user-get-feature;get-valid-user-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Get valid user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 272878
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I get user data for id \"2\"",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100926966
+            },
+            "embeddings": [
+              {
+                "data": "Getting user of id 2 data from api and response status is 200 ",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I validates the users data",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3038426
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status '200' is matching with expected Response Status '200'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current email 'janet.weaver@reqres.in' is matching with expected email 'janet.weaver@reqres.in'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current First Name 'Janet' is matching with expected First Name 'Janet'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current last Name 'Weaver' is matching with expected last Name 'Weaver'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 192708
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 3
+          },
+          {
+            "name": "@api",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-tests----user-get-feature;get-in-valid-user-data",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Get in-valid user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 305967
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I get user data for id \"23\"",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 376645675
+            },
+            "embeddings": [
+              {
+                "data": "Getting user of id 23 data from api and response status is 404 ",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I validates the users data",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3440549
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status '404' is matching with expected Response Status '404'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 268517
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 8
+          },
+          {
+            "name": "@api",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-tests----user-get-feature;get-users-data",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Get users data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181456
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I get user data for id \"2\"",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26386040
+            },
+            "embeddings": [
+              {
+                "data": "Getting user of id 2 data from api and response status is 200 ",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I validates the users data",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1465119
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status '200' is matching with expected Response Status '200'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current email 'janet.weaver@reqres.in' is matching with expected email 'janet.weaver@reqres.in'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current First Name 'Janet' is matching with expected First Name 'Janet'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current last Name 'Weaver' is matching with expected last Name 'Weaver'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69347
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 13
+          },
+          {
+            "name": "@api",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-tests----user-get-feature;get-users-data",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Get users data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 220323
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I get user data for id \"23\"",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380334769
+            },
+            "embeddings": [
+              {
+                "data": "Getting user of id 23 data from api and response status is 404 ",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I validates the users data",
+            "match": {
+              "location": "axios/api.tests/user/steps/getSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 639507
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status '404' is matching with expected Response Status '404'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 200660
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 13
+          },
+          {
+            "name": "@api",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-tests----user-get-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Tests -- User Get feature",
+    "tags": [],
+    "uri": "axios/api.tests/user/features/get.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-tests----post-feature;post-user-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "post user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 152620
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I post user data",
+            "match": {
+              "location": "axios/api.tests/user/steps/postSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 433348556
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I validates user post data",
+            "match": {
+              "location": "axios/api.tests/user/steps/postSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3682647
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status '201' is matching with expected Response Status '201'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 198839
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 3
+          },
+          {
+            "name": "@api",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-tests----post-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Tests -- Post feature",
+    "tags": [],
+    "uri": "axios/api.tests/user/features/post.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-tests----put-feature;put-user-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "put user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212733
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I put user data",
+            "match": {
+              "location": "axios/api.tests/user/steps/putSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 478762727
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I validates user put data",
+            "match": {
+              "location": "axios/api.tests/user/steps/putSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1862930
+            },
+            "embeddings": [
+              {
+                "data": "current Response Status 'morpheus' is matching with expected Response Status 'morpheus'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current Response Status 'leader modified' is matching with expected Response Status 'leader modified'",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "current Response Status '200' is matching with expected Response Status '200'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63521
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 3
+          },
+          {
+            "name": "@api",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-tests----put-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Tests -- Put feature",
+    "tags": [],
+    "uri": "axios/api.tests/user/features/put.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ui-tests----mens-feature;navigate-to-mens-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Navigate to Mens Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1725217083
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 971801
+            },
+            "embeddings": [
+              {
+                "data": "Before step in loggers",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 238980
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to ajio web site",
+            "match": {
+              "location": "playwright/web.tests/steps/navigate.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10179257131
+            },
+            "embeddings": [
+              {
+                "data": "Environment selected for the run : qa",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Application url: https://www.ajio.com/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "location enable modal appeared",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Clicked close button in location enable modal popup",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User clicks \"men\" hyperlink",
+            "match": {
+              "location": "playwright/web.tests/steps/navigate.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 944842438
+            },
+            "embeddings": [
+              {
+                "data": "Clicked men link successsfully in the page",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User navigates to mens page",
+            "match": {
+              "location": "playwright/web.tests/steps/menSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3004106243
+            },
+            "embeddings": [
+              {
+                "data": "current URL 'https://www.ajio.com/shop/men' is matching with expected URL 'https://www.ajio.com/shop/men'",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 498479
+            },
+            "embeddings": [
+              {
+                "data": "After step in loggers",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89862
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 6
+          },
+          {
+            "name": "@ui",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ui-tests----mens-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "UI Tests -- Mens feature",
+    "tags": [],
+    "uri": "playwright/web.tests/features/men.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ui-tests----women-feature;navigate-to-womens-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Navigate to Womens Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1543185313
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290861
+            },
+            "embeddings": [
+              {
+                "data": "Before step in loggers",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 196468
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to ajio web site",
+            "match": {
+              "location": "playwright/web.tests/steps/navigate.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10141246725
+            },
+            "embeddings": [
+              {
+                "data": "Environment selected for the run : qa",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Application url: https://www.ajio.com/",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "location enable modal appeared",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Clicked close button in location enable modal popup",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User clicks \"women\" hyperlink",
+            "match": {
+              "location": "playwright/web.tests/steps/navigate.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1149947080
+            },
+            "embeddings": [
+              {
+                "data": "Clicked women link successsfully in the page",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User navigates to womens page",
+            "match": {
+              "location": "playwright/web.tests/steps/womenSteps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3017659868,
+              "error_message": "AssertionError: current URL 'https://www.ajio.com/shop/women' is not matching with expected URL 'https://www.ajio.com/shop/womens': expected 'https://www.ajio.com/shop/women' to equal 'https://www.ajio.com/shop/womens'\n    + expected - actual\n\n    -https://www.ajio.com/shop/women\n    +https://www.ajio.com/shop/womens\n\n    at compareText (/Users/vgopalam/Personal/vijay.sdet.jsautomation/utilities/compareHelper.js:4:12)\n    at womenPO.validateTab (/Users/vgopalam/Personal/vijay.sdet.jsautomation/playwright/web.tests/pages/navigatePO.js:30:9)\n    at async World.<anonymous> (/Users/vgopalam/Personal/vijay.sdet.jsautomation/playwright/web.tests/steps/womenSteps.js:11:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6191046
+            },
+            "embeddings": [
+              {
+                "data": "After step in loggers",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86606
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 6
+          },
+          {
+            "name": "@ui",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ui-tests----women-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "UI Tests -- Women feature",
+    "tags": [],
+    "uri": "playwright/web.tests/features/women.feature"
+  }
+]

@@ -1,0 +1,8 @@
+{
+    "qa": {
+        "url": "https://www.ajio.com/",
+        "user": "",
+        "passwd": "",
+        "apiendpoint":"https://reqres.in/api"
+    }
+}

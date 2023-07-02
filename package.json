@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@cucumber/cucumber": "^9.2.0",
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.0",
+    "minimist": "^1.2.8",
+    "playwright": "^1.35.1"
+  },
+   "scripts": {
+    "build": "npm update",
+    "qa": "cucumber-js --world-parameters \"{\\\"env\\\": \\\"qa\\\"}\"  --tags @Sanity  --publish-quiet --parallel 2 --retry 0 -f json:report/report.json --exit",
+    "reports": "node report/report.js && node report/report.json"
+  }
+}
