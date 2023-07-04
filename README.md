@@ -38,7 +38,7 @@ Comand to run tests : _"npm run qa"_
 **Reporting**
 The framework generates detailed HTML reports using the Cucumber-HTML plugin. After running the tests, the reports can be found in the reports directory. 
 
-comand to generate Reports : _"npm run reports" _
+comand to generate Reports : "npm run reports" 
 
 **Contributing**
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
@@ -48,6 +48,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 Execution : 
 Execute the tests with
-`npm run qa` for ship environment
+`npm run qa` 
 
 
